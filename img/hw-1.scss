@@ -1,0 +1,122 @@
+@import 'mobile';
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .start {
+    background-image: url(img/topback.jpg);
+  }
+  
+  .top {
+    height: 1024px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 217px;
+  }
+  
+  .title {
+    width: 760px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    margin-bottom: 32px;
+  }
+  
+  .top_text {
+    width: 481px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFF;
+    margin-bottom: 44px;
+  }
+  
+  .header_button {
+    width: 234.06px;
+    height: 48.6px;
+    color: #FFF;
+    background: #9C0332;
+    border-radius: 30px;
+    border-color: #9C0332;
+  }
+  
+  .header_button:hover {
+    background: #FFF;
+    color: #9C0332;
+    border-color: #FFF;
+  }
+  
+  .for {
+    background-color: #000915;
+  }
+  
+  .for-box {
+    height: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+  
+  .for_item {
+    width: 379px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding-top: 236px;
+    padding-left: 32px;
+  }
+  
+  .for_item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #9C0332;
+  }
+  
+  .for_item_1 {
+    background-image: url(img/for3.png);
+    background-repeat: no-repeat;
+    border-radius: 16px;
+  }
+  
+  .for_item_2 {
+    background-image: url(img/for4.png);
+    background-repeat: no-repeat;
+    border-radius: 16px;
+  }
+  
+  .for_item_3 {
+    background-image: url(img/for5.png);
+    background-repeat: no-repeat;
+    border-radius: 16px;
+  }
