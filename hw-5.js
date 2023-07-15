@@ -82,14 +82,24 @@ cube();
 
 
 //Задание 7
-function getArea(r) {
-    return r ** 2 * Math.PI;
+const circle1 = {
+    radius: '',
+    getArea: getAreaRadius,
+    getPerimeter: getPerimeterRadius,
 }
-function getPerimeter(r) {
-    return r * 2 * Math.PI;
+const circle2 = {
+    radius: '',
+    getArea: getAreaRadius,
+    getPerimeter: getPerimeterRadius,
 }
-let result1 = getArea(5);
-let result2 = getPerimeter(5);
+function getAreaRadius() {
+    return this.radius ** 2 * Math.PI;
+}
+function getPerimeterRadius() {
+    return this.radius * 2 * Math.PI;
+}
+let result1 = circle1.getArea(5);
+let result2 = circle2.getPerimeter(5);
 console.log(`Площадь круга равна ${result1}`);
 console.log(`Периметр окружности равен ${result2}`);
 
@@ -98,19 +108,19 @@ console.log(`Периметр окружности равен ${result2}`);
 function season(month) {
     month = prompt('Введите номер месяца');
     if (month >= 3 && month <= 5) {
-        console.log('Весна');
+        alert('Весна');
     }
     if (month >= 6 && month <= 8) {
-        console.log('Лето');
+        alert('Лето');
     }
     if (month >= 9 && month <= 11) {
-        console.log('Осень');
+        alert('Осень');
     }
     if (month >= 1 && month <= 2 || month == 12) {
-        console.log('Зима');
+        alert('Зима');
     }
     if (month > 12 || month < 1 || isNaN(month)) {
-        console.log('Ошибка');
+        alert('Ошибка');
     }
 }
 season();
